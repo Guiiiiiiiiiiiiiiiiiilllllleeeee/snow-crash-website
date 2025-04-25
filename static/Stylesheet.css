@@ -1,4 +1,5 @@
 body{
+<<<<<<< HEAD
     color: white;
     background-image: url("https://steamcommunity.com/sharedfiles/filedetails/?id=3065124088");
     background-repeat: no-repeat;
@@ -13,6 +14,10 @@ body{
     position: relative;
     height: 200px;
     width: auto;
+=======
+    background-image: url("fondo_pagina.gif");
+    background-color: black;
+>>>>>>> parent of 27f29bb (a)
 }
 
 input [type="search"]{
