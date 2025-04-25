@@ -1,12 +1,14 @@
 body{
     color: white;
+    background-image: url("/static/images/vids/foto.gif");
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .hero-image{
-    background-image: url("images/vids/fondo_pagina.gif");
-    background-color: gray;
-    background-repeat: no-repeat;
-    background-position: center;
     position: relative;
     height: 200px;
     width: auto;
