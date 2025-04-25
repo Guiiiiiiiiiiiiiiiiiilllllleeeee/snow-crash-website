@@ -1,4 +1,12 @@
-input [type="search"]{
+body{
+    background-image: url("fondo_pagina.gif");
+    background-color: black;
+}
 
+input [type="search"]{
 border-color: gray;
+}
+aside {
+    background: linear-gradient(135deg, var(blue), var(black));
+
 }
