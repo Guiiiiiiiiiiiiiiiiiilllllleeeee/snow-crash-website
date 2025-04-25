@@ -1,6 +1,15 @@
 body{
-    background-image: url("fondo_pagina.gif");
-    background-color: black;
+    color: white;
+}
+
+.hero-image{
+    background-image: url("images/vids/fondo_pagina.gif");
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 200px;
+    width: auto;
 }
 
 input [type="search"]{
