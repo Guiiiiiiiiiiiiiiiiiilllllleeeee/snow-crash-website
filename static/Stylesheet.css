@@ -1,14 +1,15 @@
 body{
     color: white;
-    background-image: url("/static/images/vids/foto.gif");
+    background-image: url("https://steamcommunity.com/sharedfiles/filedetails/?id=3065124088");
     background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100px;
   margin: 0;
 }
 
 .hero-image{
+    
     position: relative;
     height: 200px;
     width: auto;
