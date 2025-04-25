@@ -1,6 +1,6 @@
 body{
     background-image: url("fondo_pagina.gif");
-    background-color: black;
+    background-color: gray;
 }
 
 input [type="search"]{
@@ -8,5 +8,14 @@ border-color: gray;
 }
 aside {
     background: linear-gradient(135deg, var(blue), var(black));
+}
 
+.hero-image{
+    background-image: url("images/vids/foto.gif");
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 200px;
+    width: auto;
 }
