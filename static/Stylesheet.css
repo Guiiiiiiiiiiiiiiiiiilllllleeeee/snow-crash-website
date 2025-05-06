@@ -60,22 +60,26 @@ button a{
     height: 40px;
     transform: scale(1.1);
     cursor: pointer;
-    
 }
 .title{
     width: 500px;
     height: 100px;   
-    background-color: aquamarine;
-    color: aqua;
-    border: 2px solid white;
+    background-color: var(--color-azul-claro);
+    color: black;
+    border: 2px solid #ff49a7 ;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
     display: flex;
     margin: auto;
-    margin-top: 100px;
-    box-shadow: 4px 4px 0 #000; /* sombra estilo pixelada */
-
+    margin-top: 50px;
+    box-shadow:   0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff,
+    0 0 80px #0ff;; /* sombra estilo pixelada */
+    margin-bottom: 50px;
+    
      
 }
 .title h1{
@@ -98,11 +102,11 @@ button a{
 
 }
 .summary{
-   background-color: #0ff;
+   background-color: var(--color-azul-claro);
    border: 2px solid black;
    border-radius: 8px;
    margin: 10px;
    padding: 10px;
-   box-shadow: 4px 4px 0 #000; /* sombra estilo pixelada */
+   box-shadow: 3px 3px 2px 9px #ff49a7; /* sombra estilo pixelada */
    
 }
