@@ -16,8 +16,8 @@ height: 30px;
 margin: 5px;
 }
 aside {
-    background: linear-gradient(135deg, var(blue), var(black));
-
+    border: none;
+    
 }
 p,h1,h2{
     color: aliceblue;
@@ -25,15 +25,15 @@ p,h1,h2{
 .nabar{
     width: 100%;
     height: 50px;
-    background-color: aquamarine;
-    color: aqua;
-    border: 2px solid white;
+    background-color: var(--color-azul-claro);
+    color: black;
+    border: 3px solid #ff49a7;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     justify-content:center;
     gap: 30px;
-    box-shadow: 4px 4px 0 #000; /* sombra estilo pixelada */
+    box-shadow: 3px 3px 2px 5px #ff49a7; /* sombra estilo pixelada */
     
 }
 .nabar button{
