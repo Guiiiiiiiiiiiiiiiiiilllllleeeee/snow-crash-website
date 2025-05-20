@@ -19,6 +19,21 @@ aside {
     border: none;
     
 }
+.title h1:hover {
+    animation: glitch 0.4s linear 1;
+}
+.summary:hover {
+    box-shadow: 0 0 20px #0ff, 0 0 40px #ff49a7, 0 0 80px #0ff;
+    transition: box-shadow 0.5s;
+}
+@keyframes glitch {
+    0% { transform: translate(0); text-shadow: 2px 0 #ff49a7, -2px 0 #0ff; }
+    20% { transform: translate(-2px,2px); text-shadow: -2px 2px #ff49a7, 2px -2px #0ff; }
+    40% { transform: translate(2px,-2px); text-shadow: 2px -2px #ff49a7, -2px 2px #0ff; }
+    60% { transform: translate(-2px,2px); text-shadow: -2px 2px #ff49a7, 2px -2px #0ff; }
+    80% { transform: translate(2px,-2px); text-shadow: 2px -2px #ff49a7, -2px 2px #0ff; }
+    100% { transform: translate(0); text-shadow: 2px 0 #ff49a7, -2px 0 #0ff; }
+}
 p,h1,h2{
     color: aliceblue;
 }
@@ -34,7 +49,7 @@ p,h1,h2{
     justify-content:center;
     gap: 30px;
     box-shadow: 3px 3px 2px 5px #ff49a7; /* sombra estilo pixelada */
-    
+    animation: navbarGlow 1s infinite alternate;
 }
 .nabar button{
     background-color: aquamarine;
@@ -47,7 +62,7 @@ p,h1,h2{
     position: relative;
     box-shadow: 5px;
     box-shadow: 4px 4px 0 #000; /* sombra estilo pixelada */
-    
+    transition: transform 0.2s, box-shadow 0.2s;
 }   
 button a{
     text-decoration: none;
@@ -60,6 +75,8 @@ button a{
     height: 40px;
     transform: scale(1.1);
     cursor: pointer;
+     transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 0 20px #0ff, 0 0 40px #ff49a7;
 }
 .title{
     width: 500px;
@@ -79,6 +96,7 @@ button a{
     0 0 40px #0ff,
     0 0 80px #0ff;; /* sombra estilo pixelada */
     margin-bottom: 50px;
+    animation: titleFadeIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
     
      
 }
@@ -109,4 +127,60 @@ button a{
    padding: 10px;
    box-shadow: 3px 3px 2px 9px #ff49a7; /* sombra estilo pixelada */
    
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.nabar button a::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ff49a7, #0ff);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left;
+}
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-60px) scale(0.9) rotateX(30deg);
+        filter: blur(8px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+        filter: blur(0);
+    }
+}
+@keyframes navbarGlow {
+    from {
+        box-shadow: 0 0 10px #ff49a7, 0 0 20px #0ff;
+    }
+    to {
+        box-shadow: 0 0 50px #ff49a7, 0 0 60px #0ff;
+    }
+}
+/* From Uiverse.io by liyaxu123 */ 
+/* From Uiverse.io by Yaseen549 */ 
+.input {
+    margin-top: 5px;
+  background-color: #212121;
+  max-width: 190px;
+  height: 20px;
+  padding: 10px;
+  /* text-align: center; */
+  border: 2px solid white;
+  border-radius: 5px;
+  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+
+.input:hover, .input:focus {
+  color: rgb(0, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: .1s;
+  transition-property: box-shadow;
 }
