@@ -4,70 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snow Crash</title>
-    <!-- Aquí puedes agregar tus estilos CSS -->
     <link rel="stylesheet" href="./static/Stylesheet.css">
     <link rel="stylesheet" href="./static/colores.css">
+    <style>
+        /* Estilos adicionales para mejorar la apariencia */
+        body {
+            min-height: 100vh;
+            font-family: 'cyber-punk', 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+        .hero-image {
+            min-height: 100vh;
+            background: rgba(0,0,0,0.4);
+            padding-bottom: 40px;
+        }
+        .nabar {
+            margin-top: 20px;
+            background: linear-gradient(90deg, var(--color-azul-claro) 60%, var(--color-rosa) 100%);
+            border: 3px solid #ff49a7;
+            box-shadow: 0 0 20px #ff49a7, 0 0 40px #0ff;
+        }
+        .nabar button {
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            font-family: 'cyber-punk', monospace;
+            background: linear-gradient(90deg, #a2cef3 60%, #ff31b1 100%);
+            color: #0ff;
+            border: 2px solid #fff;
+            box-shadow: 2px 2px 0 #000;
+        }
+        .nabar button a {
+            color: #000;
+            font-weight: bold;
+        }
+        .nabar button:hover a {
+            color: #ff31b1;
+        }
+        .buscador {
+            width: 200px;
+            border-radius: 8px;
+            border: 2px solid #ff49a7;
+            background: #222c;
+            color: #0ff;
+            font-size: 1em;
+            padding-left: 10px;
+            box-shadow: 2px 2px 0 #000;
+        }
+                .title {
+            margin-top: 40px;
+            background: linear-gradient(90deg, #a2cef3 60%, #ff31b1 100%);
+            border: 3px solid #ff49a7;
+            /* box-shadow: 0 0 20px #0ff, 0 0 40px #ff49a7; */ /* Quita el glow fuerte */
+            box-shadow: 0 4px 16px #ff49a733, 0 2px 8px #0ff2; /* Glow más sutil */
+            padding: 18px 0 10px 0; /* Añade padding para hacerlo más visible */
+        }
+        .title h1 {
+            font-size: 2.7em;
+            letter-spacing: 2px;
+            color: #222; /* Texto más oscuro para mejor contraste */
+            text-shadow: 0 2px 8px #fff7, 0 1px 0 #ff49a755; /* Sombra clara sutil */
+            margin: 0;
+        }
+        .summary {
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            background: rgba(162, 206, 243, 0.95);
+            border: 3px solid #ff49a7;
+            box-shadow: 0 0 20px #ff49a7, 0 0 40px #0ff;
+            padding: 30px 40px;
+            border-radius: 16px;
+        }
+        .summary h2 {
+            font-size: 2em;
+            color: #ff31b1;
+            text-shadow: 0 0 10px #0ff, 0 0 20px #ff49a7;
+            margin-top: 30px;
+        }
+        .summary p {
+            font-size: 1.15em;
+            color: #222;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+        .summary ul {
+            margin-left: 30px;
+            color: #222;
+        }
+        .summary strong {
+            color: #ff0070;
+        }
+        .summary em {
+            color: #5052ff;
+        }
+        .summary a {
+            color: #ff31b1;
+            text-decoration: underline;
+        }
+        footer {
+            background: #222c;
+            color: #0ff;
+            text-align: center;
+            padding: 30px 10px 10px 10px;
+            font-size: 1em;
+            border-top: 3px solid #ff49a7;
+            box-shadow: 0 0 20px #ff49a7;
+        }
+        footer a {
+            color: #ff31b1;
+            text-decoration: underline;
+        }
+        /* Responsive */
+        @media (max-width: 700px) {
+            .summary {
+                padding: 15px 5vw;
+            }
+            .title {
+                width: 90vw;
+                min-width: unset;
+            }
+            .nabar {
+                flex-direction: column;
+                gap: 10px;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="hero-image">
-    <aside>
-        <div class="nabar">
-        
-        
-        <button><a href="#I1">Summary</a></button>
-            <button><a href="#I2">Definitions</a></button>
-            <button><a href="#I3">Comparations with todays world</a></button>
-            <input type="search" class="buscador">
-            
-        
-    </div>
-    </aside>
-    <header>
-        <div class="title"><h1 id="UP">Snow Crash - Neal Stephenson</h1></div>
-        
-    </header>
-
-   
-    <main>
-        <!-- joaquín-->
-        <section class="summary">
-            <h2 id="I1">Summary</h2>
-            <p>Snow Crash is a science fiction novel about the situation in the world in the 21st century after de worldwide economic collapse.
-                The protagonist Hiro is a freelance hacker, and pizza delivery driver for the Mafia. He meets Y.T. a toung skateboard Kourier, she helps completes a delivery for him on her behalf. After losing their job as pizza deliverys they partner to gather Intel and selling it to the Central Intelligence Corporation.
-                In the metaverse, Hiro is offered a datafile named Snow Crash by a man named Raven, hinting is a narcotic. A friend of Hiro called Da5id view the bitmap image contained in the file wich makes his computer crash and suffer brain damage in the real world.
-                Hiro’s ex-girlfriend gives him a database containting a large amount of reserch compiled by Lagos about a virus, the ancient Sumerian culture and the legend od the Tower of Babel.
-                This research showed the ancient Somerian lenguage could “Program” your brain with audio and a DNA-altering virus.
-                L.Bob Rife collected Sumerian artifacts to create the drug Snow Crash and used to control people how consume it.
-                Hiro goes to L.Bob Rife’s yatch with help of the Mafia to help Y.T. after been captured to atract uncle Enzo the Mafia Boss. With their help Hiro is able to netrualize the virus so Y.T and other people could escape. Helping Y.T reunite with her mother and Hiro.
-                ​</p>
-                 <!-- guillermo-->
+        <aside>
+            <div class="nabar">
+                <button><a href="#I1">Summary</a></button>
+                <button><a href="#I2">Definitions</a></button>
+                <button><a href="#I3">Comparisons</a></button>
+                <input type="search" class="buscador" placeholder="Buscar...">
+            </div>
+        </aside>
+        <header>
+            <div class="title"><h1 id="UP">Snow Crash - Neal Stephenson</h1></div>
+        </header>
+        <main>
+            <section class="summary">
+                <h2 id="I1">Summary</h2>
                 <p>
-                    Guillermo – Hacking & Language Virus
-                    In Snow Crash, Neal Stephenson presents a visionary and thought-provoking take on the power of code and language as tools of control. The novel explores how hacking is not only a technical skill but also a means of cultural and cognitive manipulation.
-                    Hacking and Programming
-                    The protagonist, Hiro Protagonist, is both a swordsman and a programmer/hacker, symbolizing the blend of traditional and digital cultures. Through Hiro and other characters, the story highlights how programmers hold real power in the Metaverse—not just as users but as creators and manipulators of virtual environments. Code is portrayed almost like a modern form of magic, capable of building, destroying, and influencing perception.
-                    Stephenson anticipates ideas like cyberattacks in virtual spaces and the use of digital viruses to corrupt systems—and even human minds. Hacking here is more philosophical than purely technical: it’s not just about breaking into systems, but about understanding and shaping reality itself.
-                    The Language Virus
-                    One of the most original elements of the novel is Snow Crash itself, a virus that operates on both digital and biological/linguistic levels. Stephenson introduces the idea that language is a form of code, and just like a program, it can be manipulated to control thought. He draws from real-world theories such as the Sumerian root language, which in the novel was used to "program" the human brain.
-                    This virus affects both humans and machines, breaking down the boundary between biology and technology. The novel suggests that if you can control the base language of a mind, you can hack it. This metaphor of “brain programming” connects linguistics, neuroscience, and computer science in a powerful and unsettling way.
-                     </p>
-            <h2 id="I2">Definitions</h2>
-            <p>Definiciones de metaverso realidad virtual...</p>
-            <h2 id="I3">Comparations with todays world</h2>
-            <p>comparaciones con el mundo actual.</p>
-            <p><a href="#UP">Volver arriba ^</a></p>
-        </section>
-       
-       
-    </main>
-
-    <footer>
-        <p>Copyright &copy; 2007 Free Software Foundation, Inc.</p>
-        <a href="https://fsf.org/">Page to Free Software Foundation</a>
-        <p>Everyone is permitted to copy and distribute verbatim copies
-            of this license document, but changing it is not allowed.S</p>
-        <p>By Joaquín Muñoz Salazar, Guillermo & Adrian</p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </footer>
+                    <strong>Snow Crash</strong> is a visionary science fiction novel set in a fractured 21st-century America after a global economic collapse. The story follows <strong>Hiro Protagonist</strong>, a freelance hacker and pizza delivery driver for the Mafia, and <strong>Y.T.</strong>, a daring skateboard courier. After a fateful delivery, they team up to gather and sell information to the Central Intelligence Corporation.
+                </p>
+                <p>
+                    In the <em>Metaverse</em>, Hiro encounters a mysterious datafile called <strong>Snow Crash</strong>, offered by the enigmatic Raven. When Hiro's friend Da5id views the file, his computer crashes and he suffers brain damage in the real world. Hiro’s ex-girlfriend hands him a database compiled by Lagos, revealing a connection between a mind-altering virus, ancient Sumerian culture, and the legend of the Tower of Babel.
+                </p>
+                <p>
+                    The research suggests that the Sumerian language could "program" the human brain using sound and a DNA-altering virus. The villain, <strong>L. Bob Rife</strong>, collects Sumerian artifacts to create and spread the Snow Crash drug, aiming to control its users. With the Mafia’s help, Hiro infiltrates Rife’s yacht to rescue Y.T. and neutralize the virus, ultimately helping her reunite with her mother.
+                </p>
+                <hr style="border: 1px solid #ff49a7; margin: 30px 0;">
+                <h2>Hacking & Language Virus</h2>
+                <p>
+                    <strong>Guillermo – Hacking & Language Virus</strong><br>
+                    <em>Snow Crash</em> explores the power of code and language as tools of control. Hacking is not just technical, but a way to manipulate culture and cognition. Hiro, both swordsman and hacker, symbolizes the fusion of tradition and technology. Programmers wield real power in the Metaverse, shaping virtual reality like digital magicians.
+                </p>
+                <p>
+                    Stephenson anticipates cyberattacks in virtual spaces and digital viruses that can corrupt both systems and minds. The <strong>Snow Crash virus</strong> operates on digital and biological levels, blurring the line between technology and biology. Language is depicted as code—if you control the base language, you can "hack" the mind. This metaphor connects linguistics, neuroscience, and computer science in a unique and unsettling way.
+                </p>
+                <h2 id="I2">Definitions</h2>
+                <ul>
+                    <li><strong>Metaverse:</strong> A vast, immersive virtual reality space where users interact as avatars, socialize, work, and play.</li>
+                    <li><strong>Reality Virus:</strong> A concept where language or code can alter perception, behavior, or even biology.</li>
+                    <li><strong>Kourier:</strong> A futuristic courier who uses advanced skateboards to deliver packages quickly across chaotic cityscapes.</li>
+                    <li><strong>Central Intelligence Corporation:</strong> A privatized information agency that buys and sells data in the novel’s world.</li>
+                </ul>
+                <h2 id="I3">Comparisons with Today's World</h2>
+                <ul>
+                    <li><strong>Metaverse:</strong> The metaverse is a digital world inside the internet that is access by virtual reality or computers and simulating websites and information as objects you or others can interact with.</li>
+                    <li><strong>Language as Code:</strong> Modern AI and NLP (Natural Language Processing) echo the idea that language can shape thought and behavior.</li>
+                    <li><strong>Corporate Power:</strong> The privatization and fragmentation of society in <em>Snow Crash</em> mirrors concerns about tech monopolies and the gig economy.</li>
+                    <li><strong>Cybersecurity:</strong> The threat of digital viruses and hacking is more relevant than ever in our connected world.</li>
+                    
+                </ul>
+                <div style="display: flex; justify-content: center; margin: 30px 0;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YkpXBCKZsLw" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen style="border-radius: 16px; box-shadow: 0 0 20px #ff49a7, 0 0 40px #0ff;"></iframe>
+                </div>
+                <p style="text-align:right;"><a href="#UP">Volver arriba ^</a></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; GNU License | <a href="https://fsf.org/"></a></p>
+            <p>Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.</p>
+            <p>By Joaquín Muñoz Salazar, Guillermo González Cámara &amp; Adrian Centenera de <Label></Label>ucas</p>
+        </footer>
+    </div>
 </body>
 </html>
